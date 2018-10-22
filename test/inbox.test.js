@@ -12,13 +12,13 @@ const { interface, bytecode } = require('../compile');
 let accounts;
 let inbox;
 
-beforeEach(async () => {
+/* beforeEach(async () => {
     // 1. get a list of all test unlocked accounts
     // with promise syntax
-    /* web3.eth.getAccounts()
-        .then(fetchedAccounts => {
-            console.log(fetchedAccounts);            
-        }); */
+    // web3.eth.getAccounts()
+    //     .then(fetchedAccounts => {
+    //         console.log(fetchedAccounts);            
+    //     });
 
     // with async-await syntax
     accounts = await web3.eth.getAccounts();
@@ -31,9 +31,9 @@ beforeEach(async () => {
         })
         .send({ from: accounts[0], gas: '1000000' });
     inbox.setProvider(provider);
-});
+}); */
 
-describe('Inbox', () => {
+/* describe('Inbox', () => {
     it('debloys a contract', () => {
         console.log(inbox);        
         assert.ok(inbox.options.address); // check that an address exists (not null or undefined)
@@ -48,8 +48,7 @@ describe('Inbox', () => {
         const newMsg = await inbox.methods.message().call();;
         assert.equal(newMsg, 'new test message'); 
     })
-
-})
+}) */
 
 
 
